@@ -1,2 +1,2 @@
-# zan-http-boilerplate
+# zanhttp-boilerplate
 Youzan ZanPhp HTTP project Boilerplate
