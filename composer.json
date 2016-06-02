@@ -1,0 +1,35 @@
+{
+    "name": "{{NAMESPACE}}",
+    "repositories": [
+        {
+            "type"  : "git",
+            "url"   : "https://github.com/youzan/zan.git"
+        },
+        {
+            "packagist": false
+        },
+        {
+            "type": "composer",
+            "url": "https://packagist.phpcomposer.com"
+        }
+    ],
+    "require": {
+        "zanphp/zan": "dev-master"
+    },
+    "autoload": {
+        "psr-4": {
+            "Com\\Youzan\\ZanHttpDemo\\": "src",
+            "Com\\Youzan\\ZanHttpDemo\\Tests\\": "test",
+            "Com\\Youzan\\ZanHttpDemoInit\\": "init"
+        },
+        "classmap": []
+    },
+    "autoload-dev": {
+        "classmap": [
+        ]
+    },
+    "config": {
+        "preferred-install": "dist",
+        "secure-http": false
+    }
+}
