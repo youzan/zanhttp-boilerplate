@@ -1,6 +1,6 @@
 <?php
 
-namespace {{NAMESPACE}}Controller\Index;
+namespace {{NAMESPACE}}Controller\Demo;
 
 
 use {{NAMESPACE}}DemoModule\Service\DemoService;
