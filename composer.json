@@ -1,5 +1,5 @@
 {
-    "name": "{{NAMESPACE}}",
+    "name": "{{NAME}}",
     "repositories": [
         {
             "type"  : "git",
@@ -18,9 +18,9 @@
     },
     "autoload": {
         "psr-4": {
-            "Com\\Youzan\\ZanHttpDemo\\": "src",
-            "Com\\Youzan\\ZanHttpDemo\\Tests\\": "test",
-            "Com\\Youzan\\ZanHttpDemo\\Init\\": "init"
+            "{{NAMESPACE}}": "src",
+            "{{NAMESPACE}}Tests\\": "test",
+            "{{NAMESPACE}}Init\\": "init"
         },
         "classmap": []
     },
