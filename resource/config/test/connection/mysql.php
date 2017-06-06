@@ -1,24 +1,18 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: heize
- * Date: 16/4/5
- * Time: 下午4:53
- */
+
 return [
-    'default' => [
+    'default_write' => [
         'engine'=> 'mysqli',
-        'host' => '',
-        'user' => '',
-        'password' => '',
-        'database' => '',
-        'port' => '3306',
+        'host' => '127.0.0.1',
+        'user' => 'root',
+        'password' => '123456',
+        'database' => 'information_schema',
+        'port' => 3306,
         'pool'  => [
             'maximum-connection-count' => 50,
-            'minimum-connection-count' => 10,
-            'heartbeat-time' => 35000,
-            'init-connection'=> 0,
+            'minimum-connection-count' => 5,
+            'heartbeat-time' => 5000,
+            'init-connection'=> 5,
         ],
     ],
-
 ];

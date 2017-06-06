@@ -1,16 +1,11 @@
 <?php
-/**
- * Created by IntelliJ IDEA.
- * User: winglechen
- * Date: 16/3/16
- * Time: 19:33
- */
 
 return [
-    'host'          => '127.0.0.1',
-    'port'          => '8030',
+    'host'          => '0.0.0.0',
+    'port'          => 8030,
     'config' => [
-        'worker_num'    => 2,
+        'worker_num' => 2,
+        'dispatch_mode' => 3,
     ],
     'monitor' =>[
         'max_request'   => 100000,            //
@@ -21,4 +16,9 @@ return [
         'debug'         => false
     ],
     'request_timeout' => 30 * 1000,
+    'session' => [
+        'run' => false,
+        'kv' => 'test.test.test',
+        'ttl' => 3600 * 24
+    ],
 ];
