@@ -5,6 +5,7 @@
 
 ## 如何使用
 1. 安装swoole扩展，编译参数：
+
 `./configure --enable-async-httpclient  --enable-sockets --enable-async-redis  --enable-openssl`
 
 2. 安装 Composer [Getting Started](https://getcomposer.org/doc/00-intro.md)
