@@ -5,7 +5,7 @@
 
 ## 如何使用
 1. 安装swoole扩展，编译参数：
-`--enable-async-mysql --enable-async-httpclient --enable-sockets --enable-async-redis`
+`./configure --enable-async-httpclient  --enable-sockets --enable-async-redis  --enable-openssl`
 
 2. 安装 Composer [Getting Started](https://getcomposer.org/doc/00-intro.md)
 ```bash
