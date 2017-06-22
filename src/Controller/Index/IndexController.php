@@ -15,10 +15,7 @@ class IndexController extends Controller
     //字符串输出示例
     public function index()
     {
-        $response =  $this->output('success');
-        //设置响应信息头部
-        $response->withHeaders(['Content-Type' => 'text/javascript;charset=utf-8']);
-        yield $response;
+        yield $this->display("Demo/welcome/welcome");
     }
 
     public function exception()
@@ -74,8 +71,14 @@ class IndexController extends Controller
     // 调用 远程NOVA 服务
     public function novaRemoteService()
     {
-        $tcp = new NovaCall();
-        $result = (yield $tcp->invokeRemoteNovaMethod());
-        yield $this->r(0, 'json string', $result);
+        try {
+            $tcp = new NovaCall();
+            $result = (yield $tcp->invokeRemoteNovaMethod());
+            yield $this->r(0, 'json string', $result);
+        } catch (\Exception $e) {
+            $msg = get_class($e) . ":" . $e->getMessage();
+            sys_error($msg);
+            yield $this->r(0, $msg, null);
+        }
     }
 }
