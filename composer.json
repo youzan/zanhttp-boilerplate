@@ -3,7 +3,7 @@
     "repositories": {
         "0": {
             "type": "git",
-            "url": "https://git.oschina.net/zan-group/zanphp.git"
+            "url": "https://git.oschina.net/zan-group/nova.git"
         },
         "1": {
             "type": "git",
@@ -11,14 +11,39 @@
         },
         "2": {
             "type": "git",
-            "url": "https://git.oschina.net/zan-group/nova.git"
+            "url": "https://git.oschina.net/zan-group/nova-generic.git"
         },
         "3": {
-            "type": "path",
-            "url": "nova-sdk/nova-demo/",
-            "options": {
-                "symlink": false
-            }
+            "type": "git",
+            "url": "https://github.com/zanphp/cache.git"
+        },
+        "4": {
+            "type": "git",
+            "url": "https://github.com/zanphp/container.git"
+        },
+        "5": {
+            "type": "git",
+            "url": "https://github.com/zanphp/contracts.git"
+        },
+        "6": {
+            "type": "git",
+            "url": "https://github.com/zanphp/etcd-client.git"
+        },
+        "7": {
+            "type": "git",
+            "url": "https://github.com/zanphp/loadbalance.git"
+        },
+        "8": {
+            "type": "git",
+            "url": "https://github.com/zanphp/service-chain.git"
+        },
+        "9": {
+            "type": "git",
+            "url": "https://git.oschina.net/zan-group/nova-demo.git"
+        },
+        "10": {
+            "type": "git",
+            "url": "https://git.oschina.net/zan-group/zanphp.git"
         },
         "packagist": {
             "type": "composer",
@@ -27,7 +52,7 @@
     },
     "require": {
         "zanphp/zan": "dev-master",
-        "nova-service/nova-demo": "*"
+        "nova-service/nova-demo": "dev-master"
     },
     "autoload": {
         "psr-4": {
