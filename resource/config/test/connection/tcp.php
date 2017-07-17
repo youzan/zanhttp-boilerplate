@@ -16,8 +16,8 @@ return [
         ],
         'pool'  => [
             'maximum-connection-count' => 5,
-            'minimum-connection-count' => 2,
-            'init-connection'=> 2,
+            'minimum-connection-count' => 0,
+            'init-connection'=> 0,
         ],
     ],
 ];

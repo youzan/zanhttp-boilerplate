@@ -17,7 +17,7 @@ return [
     ],
     'request_timeout' => 30 * 1000,
     'session' => [
-        'run' => true,
+        'run' => false,
         'store_key' => 'demo.session.session',
     ],
 ];
